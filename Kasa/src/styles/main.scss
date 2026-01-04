@@ -1,0 +1,16 @@
+/* src/styles/main.scss */
+
+/* 1) Global */
+@use "./globals/_reset.scss";
+@use "./globals/_base.scss";
+@use "./globals/_layout.scss";
+
+/* 2) Components */
+@use "../components/Header/Header.scss";
+@use "../components/Footer/Footer.scss";
+
+/* 3) Pages */
+@use "../pages/Home/Home.scss";
+@use "../pages/About/About.scss";
+@use "../pages/Error/Error.scss";
+@use "../pages/Housing/Housing.scss";

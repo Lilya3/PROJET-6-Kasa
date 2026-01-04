@@ -1,0 +1,27 @@
+/* src/components/Header/Header.scss */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+
+.header__logo {
+  text-decoration: none;
+  font-weight: 700;
+  color: inherit;
+}
+
+.header__nav {
+  display: flex;
+  gap: 16px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header__link--active {
+  text-decoration: underline;
+}
