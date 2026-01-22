@@ -1,7 +1,10 @@
+@use "../../styles/globals/base" as *;
+
 .banner {
   position: relative;
   height: 223px;
   border-radius: 25px;
+  margin: 20px 0;
   overflow: hidden;
 
   &__img {
@@ -20,7 +23,7 @@
     margin: 0;
     padding: 0 16px;
 
-    color: #fff;
+    color: $color-light;
     font-size: 48px;
     font-weight: 700;
     text-align: center;

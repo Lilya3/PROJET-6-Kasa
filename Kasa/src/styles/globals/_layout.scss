@@ -1,0 +1,24 @@
+/* Global Pages */
+@use "./base" as *;
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__main {
+    flex: 1;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 100px;
+  }
+
+  @media (max-width: 1024px) {
+    &__main { padding: 0 50px; }
+  }
+
+  @media (max-width: 768px) {
+    &__main { padding: 0 20px; }
+  }
+}

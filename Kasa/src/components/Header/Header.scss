@@ -1,8 +1,10 @@
+@use "../../styles/globals/base" as *;
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 24px;
+  padding: 16px 0 ;
 
   &__logo {
     text-decoration: none;
@@ -12,7 +14,7 @@
 
   &__nav {
     display: flex;
-    gap: 16px;
+    gap: 60px;
   }
 
   &__link {
