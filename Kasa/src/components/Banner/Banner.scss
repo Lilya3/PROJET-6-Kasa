@@ -2,7 +2,7 @@
 
 .banner {
   position: relative;
-  height: 223px;
+  height: 150px;
   border-radius: 25px;
   margin: 0;
   overflow: hidden;
@@ -12,7 +12,7 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    filter: brightness(70%);
+    filter: brightness(50%);
   }
 
   &__title {
@@ -22,11 +22,14 @@
     place-items: center;
     margin: 0;
     padding: 0 16px;
-
+    text-shadow: 
+    -0.5px -0.5px 0 #000,
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
     color: $color-light;
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 700;
-    text-align: center;
   }
 
   @media (max-width: 768px) {

@@ -1,10 +1,17 @@
 @use "../../styles/globals/base" as *;
 
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 0 32px;
+  width: 100%;
+
+  &__inner {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 16px 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   &__logo {
     display: block;
@@ -26,19 +33,24 @@
     }
   }
 
-  /* ===== RESPONSIVE ===== */
+  /* RESPONSIVE */
+  @media (max-width: 1024px) {
+    &__inner {
+      padding: 16px 50px;
+    }
+  }
+
   @media (max-width: 768px) {
+    &__inner {
+      padding: 16px 20px;
+    }
+
     &__logo {
       width: 110px;
     }
 
     &__nav {
       gap: 26px;
-    }
-
-    &__link {
-      font-size: 12px;
-      text-transform: uppercase;
     }
   }
 }
