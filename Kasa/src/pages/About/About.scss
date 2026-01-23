@@ -14,10 +14,10 @@
 
     &__collapses {
       width: 100%;
-      max-width: 1023px;
+      max-width: 850px;
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
       gap: 30px;
-      margin: 0 auto;
     }
 }

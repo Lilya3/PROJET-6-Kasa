@@ -1,7 +1,10 @@
+import logoFooter from "../../assets/logo-footer.svg";
+
 export default function Footer() {
   return (
     <footer className="footer">
-      <p className="footer__text">© {new Date().getFullYear()} Kasa. All rights reserved</p>
+      <img className="footer__logo" src={logoFooter} alt="Kasa" />
+      <p className="footer__text">© 2020 Kasa. All rights reserved</p>
     </footer>
-  )
+  );
 }
