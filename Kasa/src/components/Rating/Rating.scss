@@ -1,0 +1,16 @@
+@use "../../styles/globals/base" as *;
+
+.rating {
+  display: flex;
+  gap: 10px;
+
+  &__star {
+    font-size: 24px;
+    color: #e3e3e3;
+    line-height: 1;
+
+    &--on {
+      color: $color-primary;
+    }
+  }
+}

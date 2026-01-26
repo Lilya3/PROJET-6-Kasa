@@ -1,1 +1,136 @@
 @use "../../styles/globals/base" as *;
+
+.housing {
+  padding: 20px 0;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 24px;
+  }
+
+  &__left {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__title {
+    margin: 0;
+    color: $color-primary;
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  &__location {
+    margin: 8px 0 0;
+    font-size: 18px;
+  }
+
+  &__tags {
+    margin: 18px 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  &__tag {
+    background: $color-primary;
+    color: $color-light;
+    padding: 4px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 18px;
+  }
+
+  &__host {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__host-name {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    color: $color-primary;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  &__host-picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__bottom {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: start;
+  }
+
+  &__equipments {
+    margin: 0;
+    padding: 10px 18px;
+    list-style-type: none ;
+    line-height: 130%;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 10px 18px;
+    line-height: 130%;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 768px) {
+    &__top {
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &__right {
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__location {
+      font-size: 14px;
+    }
+
+    &__tag {
+      font-size: 10px;
+      border-radius: 8px;
+      padding: 3px 12px;
+    }
+
+    &__host-picture {
+      width: 48px;
+      height: 48px;
+    }
+
+    &__bottom {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+}
