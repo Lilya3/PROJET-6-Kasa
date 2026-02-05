@@ -1,5 +1,8 @@
-import { NavLink } from "react-router-dom"
-import logoKaza from "../../assets/logo-kaza.svg"
+import { NavLink } from "react-router-dom";
+import logoKaza from "../../assets/logo-kaza.svg";
+
+const navClass = ({ isActive }) =>
+  isActive ? "header__link header__link--active" : "header__link";
 
 export default function Header() {
   return (
@@ -10,22 +13,11 @@ export default function Header() {
         </NavLink>
 
         <nav className="header__nav">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              isActive ? "header__link header__link--active" : "header__link"
-            }
-            end
-          >
+          <NavLink to="/" className={navClass} end>
             Accueil
           </NavLink>
 
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              isActive ? "header__link header__link--active" : "header__link"
-            }
-          >
+          <NavLink to="/about" className={navClass}>
             À Propos
           </NavLink>
         </nav>
