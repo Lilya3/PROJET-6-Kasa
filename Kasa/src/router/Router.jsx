@@ -6,7 +6,7 @@ import About from "../pages/About/About"
 import Housing from "../pages/Housing/Housing"
 import Error from "../pages/Error/Error"
 
-export default function router() {
+export default function Router() {
     return (
         <Routes>
             <Route element={<Layout />}>
